@@ -1,0 +1,199 @@
+﻿"Issue Id","Project","Tags","Summary","Reporter","Created","Updated","Resolved","Priority","Type","State","Assignee","Sprints","Ideal days","Original estimation","Story points","Environment","Description","Votes"
+"G41-41","group4.1","Star","Form ""Billing Address"". The field ""Mobile Number"". Not be able to entered 13 numbers in the field ""Mobile Number""","Ekaterina Soldatova","31 Mar 2023","26 May 2023",,"Major","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Input any 13 numbers in the field ""Mobile Number"" example 1234567890123
+
+Real result: Not be able to enter 13 numbers in the field ""Mobile Number""
+
+Expected result: User can enter 13 numbers in the field ""Mobile Number"", the source is requirements (point 6 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-40","group4.1","Star","The error message of the field ""Address"" has a mistake if entering Cyrillic in the field ""Address"". The page ""Add Customer"", the field ""Address"".","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Input any Cyrillic symbols in the field ""Address"" example Москва Ивановский проспект 29
+
+4) See the error message under the field ""Address""
+
+Real result: In this case the error message of the field ""Address"" is ""Special characters are not allowed""
+
+Expected result: In this case  the error message of the field ""Address"" should has the message ""Cyrillic are not allowed"", the source is requirements (point 5 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-39","group4.1","Star","The error message is shown under the field ""Address"" in the case allowed special characters dot and comma is entered the field ""Address"". The page ""Add Customer"", the field ""Address"".","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Input in the field ""FirstName"", example Olya
+
+4) Input in the field ""LastName"", example Ivaniva
+
+5) Input in the field ""Email"", example test@mail.com
+
+6) Input address using Latin symbols, numbers, comma and dot, example Moscow, Ivanovskiy prospect, 29, 35.
+
+7) See the error message under the field ""Address""
+
+8) Input in the field ""Mobile Number"", example 5648556788 
+
+9) Click on the button ""Submit""
+
+Real result: The error message is shown under the field ""Address"". User can't be added.
+
+Expected result: The error message isn't shown under the field ""Address"". User can be added, the source is requirements (point 5 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-37","group4.1","Star","The error messages of the field ""Email"" have a typo ""ID"" if the field ""Email"" is empty or inputting any unallowed symbols. The page ""Add Customer"", the field ""Email"".","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+
+2. Click on the button ""Add Customer"" on the homepage
+
+3. Click on the field ""Email""
+
+4. Leave blank the field ""Email""
+
+5. See the error message under the field ""Email""
+
+6. Input unallowed symbols in the field ""Email"" example any numbers
+
+7. See the error message under the field ""Email""
+
+Real result: The error message of the field ""Email"" is ""**Email-ID must not be blank"" and ""Email-ID is not valid""**
+
+Expected result: The error message of the field ""Email"" should have the message ""**Email must not be blank"" and ""Email is not valid""**, the source is requirements (point 4 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-35","group4.1","Star","The error message of the field ""LastName"" has a mistake if entering Cyrillic in the  field ""LastName"".The page ""Add Customer"", the field ""LastName"".","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+
+2. Click on the button ""Add Customer"" on the homepage
+
+3. Input any Cyrillic symbols in the field ""LastName""
+
+4. See the error message under the field ""LastName""
+
+Real result: In this case the error message of the field ""LastName"" is ""Numbers are not allowed""
+
+Expected result: In this case  the error message of the field ""LastName"" should have the message ""Cyrillic are not allowed"", the source is requirements (point 3 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-34","group4.1","Star","The error message of the field ""FirstName"" has a mistake if entering Cyrillic in the  field ""FirstName"". The page ""Add Customer"", the field ""FirstName"".","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+
+2. Click on the button ""Add Customer"" on the homepage
+
+3. Input any Cyrillic symbols in the field ""FirstName""
+
+4. See the error message under the field ""FirstName""
+
+Real result: In this case the error message of the field ""FirstName"" is ""**Numbers are not allowed**""
+
+Expected result: In this case  the error message of the field ""FirstName"" should have the message ""**Cyrillic are not allowed**"", the source is requirements (point 2 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-12","group4.1","Star","The button ""Delete Customer"" is missed on the homepage. The main page.","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Major","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+
+2. See on elements of the homepage
+
+Real result: The button ""Delete Customer"" is missed on the homepage
+
+Expected result: The button ""Delete Customer"" is located on the homepage, the source is requirements (point 3 of the requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-17","group4.1","Star","The button ""Delete Customer"" is missed on the hamburger menu. The main page.","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Open the hamburger menu by icon ""hamburger menu"" clicking
+
+3) See on the elements of the hamburger menu
+
+Real result: The button ""Delete Customer"" is missed on the hamburger menu
+
+Expected result: The button ""Delete Customer"" is located on the hamburger menu, the source is requirements (point 5 of the homepage of the  requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-20","group4.1","Star","Required fields ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number"" isn't marked *. The page ""Add Customer"", required fields.","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button Add Customer on the homepage
+
+3) See on the area near fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number"" 
+
+Real result: Required fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number""  isn't marked \*
+
+Expected result: Required fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number""  is marked \*, the source is requirements (point 6 of the Add Customer of the  requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-25","group4.1","Star","Fields ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number"" don't have a names. The page ""Add Customer""  in the block ""Billing Address"".","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+
+2. Click on the button Add Customer on the homepage
+
+3. See on the area above box of the fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number""
+
+Real result: Fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number""  don't have names.
+
+Expected result: Fields  ""FirstName"", ""LastName"", ""Email"", ""Address"", ""Mobile Number""  should have names the same of the names of the appropriate fields, the source is requirements (point 5 of the Add Customer of the  requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-28","group4.1","Star","The placeholder of the field ""Address"" has wrong name for the field ""Address"". The page ""Add Customer"", the field ""Address"".","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button Add Customer on the homepage
+
+3) See on placeholder of the fields  ""Address""
+
+Real result: The field ""Address"" has the placeholder ""Enter your address""
+
+Expected result: The field ""Address"" should have the placeholder ""Address"", the source is requirements (point 5 of the Add Customer of the  requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-29","group4.1","Star","Unable to reset the error message under the required fields by the button ""Reset"" clicking. The page ""Add Customer"", the required fields.","Ekaterina Soldatova","30 Mar 2023","31 Mar 2023",,"Normal","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button Add Customer on the homepage
+
+3) Fill the required fields ""FirstName"" - Kate 
+
+4) Fill the required fields ""LastName"" - Popova
+
+5) Fill the required fields ""Email"" - test@mail.com 
+
+7) Fill the required fields ""Address"" - Moscow Ivanivskiy prospekt 29 83
+
+4) Click on the field ""Mobile Number"" 
+
+5)  The field ""Mobile Number"" leave blank
+
+6) Get the error message ""Mobile must not be blank""
+
+7) Click on the button ""Reset""
+
+Real result: The message ""Mobile must not be blank"" isn't reseted after by the button ""Reset"" clicking 
+
+Expected result: The message ""Mobile must not be blank"" is reseted after by the button ""Reset"" clicking , the source is requirements (point 8 of the Add Customer of the requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-46","group4.1","Star","The message don't have space between words customer and ID. The page ""Access Details to Guru99 telecom"". The message is shown after added a customer.","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1. Go to page <https://demo.guru99.com/telecom/index.html>
+2. Click on the button Add Customer on the homepage
+3. Fill the required fields ""FirstName"" - Kate
+4. Fill the required fields ""LastName"" - Popova
+5. Fill the required fields ""Email"" - [test@mail.com](mailto:test@mail.com)
+6. Fill the required fields ""Address"" - Moscow Ivanivskiy prospekt 29 83
+7. Fill the required fields  ""Mobile Number"" - 123456789
+8. Click on the button ""Submit""
+9. See on the user's message 
+
+Real result: The message ""Please Note Down Your CustomerID"" don't have space between words customer and ID
+
+Expected result: The message ""Please Note Down Your Customer ID"" should have  space between words customer and ID, the source is requirements (point 9b of the Add Customer of the requirements) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-45","group4.1","Star","The error message of the field ""Address"" contain mistakes.  The error message under the field ""Address"". If the field ""Address"" is left blank.","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Click on the field ""Address""
+
+4) Leave blank the field ""Address""
+
+5) See the error message under the field ""Address""
+
+Real result: In this case the error message of the field ""Address"" is ""Address field must not be blank""
+
+Expected result: In this case  the error message of the field ""Address"" should has the message ""Address must not be blank"", the source is requirements (point 4 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-44","group4.1","Star","The error message of the field ""FirstName"" contain mistakes.  The error message under the field ""LastName"". If the field ""LastName"" is left blank.","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Click on the field ""LastName""
+
+4) Leave blank the field ""LastName""
+
+5) See the error message under the field ""LastName""
+
+Real result: In this case the error message of the field ""LasttName"" is ""Customer name must not be blank""
+
+Expected result: In this case  the error message of the field ""LastName"" should has the message ""Last name must not be blank"", the source is requirements (point 3 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
+"G41-43","group4.1","Star","The error message of the field ""FirstName"" contain mistakes.  The error message under the field ""FirstName"". If the field ""FirstName"" is left blank.","Ekaterina Soldatova","31 Mar 2023","31 Mar 2023",,"Minor","Bug","Open","Unassigned","Unscheduled",,,,"Browser Google Chrome 111.0.5563.65, OS Windows 11 Version 22H2","1) Go to page <https://demo.guru99.com/telecom/index.html>
+
+2) Click on the button ""Add Customer"" on the homepage
+
+3) Click on the field ""FirstName""
+
+4) Leave blank the field ""FirstName""
+
+5) See the error message under the field ""FirstName""
+
+Real result: In this case the error message of the field ""FirstName"" is ""**Customer name must not be blank**""
+
+Expected result: In this case  the error message of the field ""FirstName"" should has the message ""**First name must not be blank**"", the source is requirements (point 2 of the part validation of the fields) <https://docs.google.com/spreadsheets/d/17pDHGwkAFIrDY8UlfVdkKrw2lv6KFSYgS0cryyty1Fk/edit#gid=0>","0"
